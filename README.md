@@ -1,5 +1,5 @@
 Labs of programming lessons, in Java. 
 
-The PDF files of the exercices are within each Lab folder. You'll find there as well my resolution to each exercice. 
+Each Lab folder cointains the PDF file of the requested exerices, my resolution of each exercice and a zip file that contains the whole Java project and can be imported into eclipse. 
 
 (1° semester, bachelor in Computer Science, university of Luxembourg) 
