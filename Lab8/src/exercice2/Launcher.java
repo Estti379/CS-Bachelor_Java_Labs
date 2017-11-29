@@ -12,6 +12,7 @@ public class Launcher {
 		Music music_1 = new Music("GoldenBerg variations", "Bahr", 48,456);
 		Music music_2 = new Music("Tift the gift", "Changed hearts", 3.45,123);
 		Music music_3 = new Music("Wu tang Clan", "People Says", 2.45,567);
+		//Music music_4 = new Music("Wu tang Clan", "People Says", 2.45,567); uncomment to get exception that obj == obj
 		
 		//Creating a playlist
 		Playlist playlist = new Playlist("Good_vibes");
@@ -20,6 +21,7 @@ public class Launcher {
 		playlist.add_song(music_1);
 		playlist.add_song(music_2);
 		playlist.add_song(music_3);
+		//playlist.add_song(music_4); uncomment to get exception that object == obj
 		
 		//Gets total time of playlist
 		System.out.println();

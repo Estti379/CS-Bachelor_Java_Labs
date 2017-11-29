@@ -1,4 +1,4 @@
-package lu.uni.programming1.lab8.exercise1;
+package exercise1;
 
 public class BMP extends ImageFile {
 
