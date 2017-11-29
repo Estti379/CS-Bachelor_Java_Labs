@@ -18,7 +18,7 @@ public class Super_market {
 	
 	/*
 	 * Checks if card is in the List, in case it is not allows redeem and 
-	 * and the card to the List. Note that the current available points 
+	 * and adds the card to the List. Note that the current available points 
 	 * are checked with the public boolean checkout_with_points(double bill)
 	 * method of the Loyalty_Card class
 	 */
