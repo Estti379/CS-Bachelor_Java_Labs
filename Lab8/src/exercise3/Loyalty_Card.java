@@ -1,4 +1,4 @@
-package exercice3;
+package exercise3;
 
 public class Loyalty_Card {
 	

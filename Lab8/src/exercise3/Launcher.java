@@ -1,4 +1,4 @@
-package exercice3;
+package exercise3;
 
 import java.text.DecimalFormat; 
 
@@ -45,5 +45,14 @@ public class Launcher {
 		}else {
 			System.out.println("Sorry, no points available or you already have used points today.");
 		};
+		
+		//We add two family members to card1 
+		market.increase_cardID_total(card1);
+		market.increase_cardID_total(card1);
+		
+		//We check how many people card1 has associated to it, which in this case should be three
+		System.out.println("\n"+"Total associated members to card ID:"+card1.Get_ID());
+		System.out.println(market.AssociatedMembers_ToCard(card1));
+
 	}
 }

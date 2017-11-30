@@ -1,10 +1,10 @@
-package exercice3;
+package exercise3;
 
 import java.util.*;
 
 public class Set_ID {
 	
-	private static ArrayList <Integer> assigned_cards = new ArrayList<Integer>();
+	private static List <Integer> assigned_cards = new ArrayList<Integer>();
 	private static Random generator = new Random(System.currentTimeMillis());
 	
 	public Set_ID(){};
@@ -22,6 +22,10 @@ public class Set_ID {
 		}else {
 			return generated_number;
 		}
+	}
+	
+	public void assign_existing_ID() {
+		
 	}
 
 }
