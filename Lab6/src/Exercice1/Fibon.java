@@ -1,4 +1,4 @@
-package Exercice1; // and exercice 2 
+package exercice1; // and exercice 2 
 
 public class Fibon {
 	

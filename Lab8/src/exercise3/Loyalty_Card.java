@@ -35,7 +35,8 @@ public class Loyalty_Card {
 	public int hashCode() {
 		return Get_ID();
 	}
-		
+	
+	@Override
 	public boolean equals(Object object) {
 		boolean flag; 
 			
