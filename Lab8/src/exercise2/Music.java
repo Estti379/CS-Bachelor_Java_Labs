@@ -45,10 +45,12 @@ public class Music {
 		return "\n"+"Title:"+this.title+"\n"+"Artist:"+this.artist+"\n"+"Duration:"+this.duration+"minutes";
 	}
 	
+	@Override
 	public int hashCode(){
 		return this.id;
 	}
 	
+	@Override
 	public boolean equals(Object obj ){
 		boolean flag;
 		

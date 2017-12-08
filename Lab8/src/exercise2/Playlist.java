@@ -22,6 +22,17 @@ public class Playlist {
 		 * If I did not use iterator.remove() on line 30
 		 * */
 		
+		/*Simpler way to do this 
+		 * public void add_song(Music music) { 
+		 * if(!songs.add(music)){
+			System.out.println("Music already in playlist"); 
+			}
+		}
+		
+			Because add method returns false for an hashset if it has already that item
+		 * 
+		 */
+		
 		if(this.iterator.hasNext()) {
 			while(this.iterator.hasNext()) {
 				if(this.iterator.next().equals(music)) {
