@@ -40,10 +40,6 @@ public abstract class Ship implements Attackable, Repairable {
 	
 	
 	@Override 
-	/*
-	 * If I c
-	 * 
-	 */
 	public boolean equals(Object obj) {
 		if (obj == this) {
 			return true;
