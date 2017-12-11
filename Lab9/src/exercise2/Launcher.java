@@ -63,7 +63,7 @@ public class Launcher {
 		}
 		
 		//klingon ship gets repaired and also gets more energy from crystal
-		Outposts repairing_station = new Outposts("Station-Spacex", 80, 500);
+		Outposts repairing_station = new Outposts("Station-Spacex", 80, 500,60);
 		Crystal crystal_consumable = new Crystal("Crystal_or",3,100,30);
 		klingon_object.repair_machine(repairing_station);
 		klingon_object.Add_energy_power(crystal_consumable);
@@ -94,7 +94,7 @@ public class Launcher {
 		klingon_object3 = null;
 		
 		//Starfleet ship repairs
-		Outposts repair_station = new Outposts("\n"+"Station NASA", 100, 600);
+		Outposts repair_station = new Outposts("\n"+"Station NASA", 100, 600,60);
 		crystal_consumable = new Crystal("Cystal_or",3,5,60);
 		starfleet_object.repair_machine(repair_station);
 		starfleet_object.Add_energy_power(crystal_consumable);

@@ -6,8 +6,8 @@ interface Attackable {
 	
 	public void Add_shield_power(int hp);
 	
-	public void attack(Attackable attackable_object,int damage);
+	//public void attack(Attackable attackable_object,int damage);
 	
-	public void Add_energy_power(Consumable product_to_consume);
+	//public void Add_energy_power(Consumable product_to_consume);
 
 }

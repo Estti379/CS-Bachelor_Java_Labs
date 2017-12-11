@@ -68,7 +68,6 @@ public abstract class Ship implements Attackable, Repairable {
 		this.shield_power = hp;
 	}
 	
-	@Override
 	public void attack(Attackable attackable_object, int damage) {
 		
 		/*
@@ -78,17 +77,26 @@ public abstract class Ship implements Attackable, Repairable {
 		 * attackable, which equals method is used ? The one I overwrite here in the Ship class
 		 * or the default one of the Attackable interface ? As I said said, it worked fine in the 
 		 * Launcher, so I think it uses the one I overwrote, but even if it does I do not 
-		 * see exactly how and why.
+		 * see exactly how and why. : Question answered by professor. 
 		 */
-		if(!(attackable_object.equals(this))) {
-			attackable_object.Reduce_shield_power(damage);
-			this.energy -= damage;
-		}else {
-			System.out.println("Auto-defense system activated. Cannot choose your own ship as a target.");
+		
+		if(attackable_object.equals(this)) {
+			System.out.println("Auto-Defense system activated. Cannot choose your own ship as a target, or not enough energy.");
 		}
+		
+		if(this.energy < 0) {
+			System.out.println("Not enough energy.");
+		}
+		
+		if(!(attackable_object.equals(this) && this.energy <0 )) {
+			attackable_object.Reduce_shield_power(damage);
+			this.energy -=damage;
+		}
+		
+		
+		
 	}
 	
-	@Override
 	public void Add_energy_power(Consumable product_to_consume) {
 		//Note that the total energy of a ship can always increase, if more crystals are used. 
 		if(product_to_consume.give_energy() == 0) {
